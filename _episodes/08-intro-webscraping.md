@@ -1,5 +1,5 @@
 ---
-title: "Introduction: What is web scraping?"
+title: "Introduction: What is web scraping and it's proper practices?"
 teaching: 15
 exercises: 0
 questions:
