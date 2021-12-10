@@ -39,49 +39,34 @@ The schedule for the different curricula are listed here:
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
+      <tr> <td>01:00 pm</td>  <td>Before we start</td> </tr>
+      <tr> <td>01:10 pm</td>  <td>Short Introduction to Programming in Python</td> </tr>
+      <tr> <td>01:40 pm</td>  <td>Starting With Data</td> </tr>
+      <tr> <td>02:10 pm</td>  <td>Break</td> </tr>
+      <tr> <td>02:20 pm</td>  <td>Indexing, Slicing and Subsetting DataFrames in Python</td> </tr>
+      <tr> <td>03:10 pm</td>  <td>Data Types and Formats</td> </tr>
+      <tr> <td>03:30 pm</td>  <td>Break</td> </tr>
+      <tr> <td>03:40 pm</td>  <td>Combining DataFrames with Pandas</td> </tr>
+      <tr> <td>04:25 pm</td>  <td>Making Plots With plotnine</td> </tr>
+      <tr> <td>04:50 pm</td>  <td>Review</td> </tr>
+      <tr> <td>05:00 pm</td>  <td>END</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-        </td>
-      </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
-      </tr>
+      <tr> <td>09:00 am</td>  <td>Review</td> </tr>
+      <tr> <td>09:10 am</td>  <td>Loops and Fuctions</td> </tr>
+      <tr> <td>09:50 am</td>  <td>Break</td> </tr>
+      <tr> <td>10:00 am</td>  <td>What is web scraping and it's proper practices?</td> </tr>
+      <tr> <td>10:15 am</td>  <td>Selecting content on a web page with XPath</td> </tr>
+      <tr> <td>10:40 am</td>  <td>Manually scrape data using browser extensions</td> </tr>
+      <tr> <td>11:15 am</td>  <td>Break</td> </tr>
+      <tr> <td>11:25 am</td>  <td>Web scraping using Python and Scrapy</td> </tr>
+      <tr> <td>12:50 am</td>  <td>Review</td> </tr>
+      <tr> <td>01:00 am</td>  <td>END</td> </tr>
+      <tr> <td>After</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
     </table>
   </div>
 </div>
