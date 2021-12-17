@@ -409,6 +409,12 @@ please preview your site before committing, and make sure to run
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 </p>
+<ul style="list-style-type:circle">
+  <li> <a href="https://www.anaconda.com/products/individual">Anaconda</a></li> 
+  <li> <b>Windows</b>: Make sure that <b>Register Anaconda as my default Python 3.x</b> option is selected. It should be the latest version of Anaconda</li>
+  <li> <b>Mac</b>:Make sure install location is set to <b>install only for me</b> so Anaconda will install files locally</li>
+  <li> Verify the installation by opening the terminal and typing in <span style="font-family: monospace;">jupyter lab</span> to launch a jupyter interface</li>
+</ul>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
@@ -442,37 +448,34 @@ during the workshop.
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
 
-> ## Data
-> Data for this lesson is from the
-> [Portal Project Teaching Database](https://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
-> Specifically, we use the following eight data files:
-> - [surveys.csv](https://ndownloader.figshare.com/files/10717177)
-> - [surveys2001.csv]({{ page.root }}/data/yearly_files/surveys2001.csv)
-> - [surveys2002.csv]({{ page.root }}/data/yearly_files/surveys2002.csv)
-> - [species.csv](https://ndownloader.figshare.com/files/3299483)
-> - [speciesSubset.csv]({{ page.root }}/data/speciesSubset.csv)
-> - [plots.csv](https://ndownloader.figshare.com/files/3299474)
-> - [bouldercreek_09_2013.txt]({{ page.root }}/data/bouldercreek_09_2013.txt)
-> - [portal_mammals.sqlite](https://ndownloader.figshare.com/files/11188550)
+## Data
+Data for this lesson is from the
+[Portal Project Teaching Database](https://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
+Specifically, we use the following eight data files:
+- [surveys.csv](https://ndownloader.figshare.com/files/10717177)
+- [surveys2001.csv]({{ page.root }}/data/yearly_files/surveys2001.csv)
+- [surveys2002.csv]({{ page.root }}/data/yearly_files/surveys2002.csv)
+- [species.csv](https://ndownloader.figshare.com/files/3299483)
+- [speciesSubset.csv]({{ page.root }}/data/speciesSubset.csv)
+- [plots.csv](https://ndownloader.figshare.com/files/3299474)
+- [bouldercreek_09_2013.txt]({{ page.root }}/data/bouldercreek_09_2013.txt)
+- [portal_mammals.sqlite](https://ndownloader.figshare.com/files/11188550)
 >
-> Please download them (by clicking on the corresponding links) and move them to the same directory, or
-> [download all the files as a zip](https://drive.google.com/file/d/1cx6-azDBVf9cbjY60R3DTimQPbImxmyZ/view?usp=sharing)
-> which will give you everything in a single compressed file. You'll need to unzip
-> this file after downloading it.
-{: .prereq}
+Please download them (by clicking on the corresponding links) and move them to the same directory, or
+[download all the files as a zip](https://drive.google.com/file/d/1cx6-azDBVf9cbjY60R3DTimQPbImxmyZ/view?usp=sharing)
+which will give you everything in a single compressed file. You'll need to unzip
+this file after downloading it.
 
 
-> ## Installing Python using Anaconda
->
-> [Python][python] is a popular language for scientific computing, and great for
-> general-purpose programming as well. Installing all of the scientific packages we use in the lesson
-> individually can be a bit cumbersome, and therefore recommend the all-in-one
-> installer [Anaconda][anaconda].
->
-> Regardless of how you choose to install it, please make sure you install Python
-> version 3.x (e.g., 3.6 is fine).
-{: .prereq}
+## Installing Python using Anaconda
 
+[Python][python] is a popular language for scientific computing, and great for
+general-purpose programming as well. Installing all of the scientific packages we use in the lesson
+individually can be a bit cumbersome, and therefore recommend the all-in-one
+installer [Anaconda][anaconda].
+
+Regardless of how you choose to install it, please make sure you install Python
+version 3.x (e.g., 3.6 is fine).
 
 ## Installing Anaconda
 
