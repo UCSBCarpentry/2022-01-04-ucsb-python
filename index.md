@@ -425,7 +425,8 @@ please preview your site before committing, and make sure to run
 
 <p>
   Data for this lesson is from the
-  [Portal Project Teaching Database](https://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
+  <a href= "https://figshare.com/articles/Portal_Project_Teaching_Database/1314459">Portal Project Teaching
+    Database</a>.
   Specifically, we use the following eight data files:
  </p>
  <ul style="list-style-type:circle">
