@@ -17,7 +17,7 @@ instructor: ["Greg Janée", "Amanda Ho"] # boxed, comma-separated list of instru
 helper: ["Sam Csik", "Kat Le", "Ian Lessing", "Jamie Montgomery"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["library-collaboratory@ucsb.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/2022-01-04-ucsb-python  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: 229634923237  # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -407,13 +407,15 @@ please preview your site before committing, and make sure to run
   {% endif %}
   workshop,
   you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  In addition, you will need an up-to-date <a href="https://www.google.com/chrome/">Chrome web browser</a>.
 </p>
 <ul style="list-style-type:circle">
   <li> <a href="https://www.anaconda.com/products/individual">Anaconda</a></li> 
   <li> <b>Windows</b>: Make sure that <b>Register Anaconda as my default Python 3.x</b> option is selected. It should be the latest version of Anaconda</li>
   <li> <b>Mac</b>:Make sure install location is set to <b>install only for me</b> so Anaconda will install files locally</li>
   <li> Verify the installation by opening the terminal and typing in <span style="font-family: monospace;">jupyter lab</span> to launch a jupyter interface</li>
+  <li> Scraper Chrome extension: Scraper is a data mining extension for extracting data from a web page. It will help us
+    to teach you XPath. You can download the <a href= "https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">Scraper Chrome Extension here</a>. </li>
 </ul>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
