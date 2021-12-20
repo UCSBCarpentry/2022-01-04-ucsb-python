@@ -35,11 +35,9 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 {% comment %}
 {% endcomment %}
 
-This workshop will take place between the main UCSB Campus and the NCEAS downtown location
-<li>
-Jan 4th, UCSB Library (main campus)
-Jan 7th, NCEAS Downtown
-</li>
+<h3>This workshop will take place between the main UCSB Campus and the NCEAS downtown location<h3>
+<li>Jan 4th, UCSB Library (main campus)</li>
+<li>Jan 7th, NCEAS Downtown</li>
 
 
 {% comment %}
