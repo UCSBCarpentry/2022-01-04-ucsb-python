@@ -152,6 +152,11 @@ address.
   <strong>Where:</strong> This training will take place online.
   The instructors will provide you with the information you will need to connect to this meeting.
 </p>
+
+This workshop's location will be split between the main UCSB Campus and NCEAS Downtown. 
+<br>
+Jan 4th will be at the UCSB Library
+Jan 7th will be at NCEAS Downtown
 {% endif %}
 
 {% comment %}
