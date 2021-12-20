@@ -425,8 +425,6 @@ please preview your site before committing, and make sure to run
   <li> <b>Windows</b>: Make sure that <b>Register Anaconda as my default Python 3.x</b> option is selected. It should be the latest version of Anaconda</li>
   <li> <b>Mac</b>:Make sure install location is set to <b>install only for me</b> so Anaconda will install files locally</li>
   <li> Verify the installation by opening the terminal and typing in <span style="font-family: monospace;">jupyter lab</span> to launch a jupyter interface</li>
-  <li> Scraper Chrome extension: Scraper is a data mining extension for extracting data from a web page. It will help us
-    to teach you XPath. You can download the <a href= "https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">Scraper Chrome Extension here</a>. </li>
 </ul>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
