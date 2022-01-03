@@ -418,7 +418,7 @@ please preview your site before committing, and make sure to run
   {% endif %}
   workshop,
   you will need access to software as described below.
-  In addition, you will need an up-to-date web browser</a>.
+  In addition, you will need an up-to-date web browser.
 </p>
 <ul style="list-style-type:circle">
   <li> <a href="https://www.anaconda.com/products/individual">Anaconda</a></li> 
