@@ -1,7 +1,7 @@
 ---
 title: Making Plots With plotnine
-teaching: 40
-exercises: 50
+teaching: 15
+exercises: 10
 questions:
     - "How can I visualize data in Python?"
     - "What is 'grammar of graphics'?"

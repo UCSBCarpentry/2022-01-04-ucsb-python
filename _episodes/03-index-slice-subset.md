@@ -1,7 +1,7 @@
 ---
 title: Indexing, Slicing and Subsetting DataFrames in Python
-teaching: 30
-exercises: 30
+teaching: 15
+exercises: 15
 questions:
     - "How can I access specific data within my data set?"
     - "How can Python and Pandas help me to analyse my data?"
@@ -118,7 +118,7 @@ the related Python data type dictionary).
 > the names of built-in data structures and methods. For example, a _list_ is a built-in
 > data type. It is possible to use the word 'list' as an identifier for a new object,
 > for example `list = ['apples', 'oranges', 'bananas']`. However, you would then
-> be unable to create an empty list using `list()` or convert a tuple to a 
+> be unable to create an empty list using `list()` or convert a tuple to a
 > list using `list(sometuple)`.
 {: .callout}
 

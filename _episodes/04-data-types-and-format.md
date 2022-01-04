@@ -1,7 +1,7 @@
 ---
 title: Data Types and Formats
 teaching: 15
-exercises: 25
+exercises: 5
 questions:
     - "What types of data can be contained in a DataFrame?"
     - "Why is the data type important?"

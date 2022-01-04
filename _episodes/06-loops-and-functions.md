@@ -1,7 +1,7 @@
 ---
 title: Data Workflows and Automation
-teaching: 40
-exercises: 50
+teaching: 20
+exercises: 25
 questions:
     - "Can I automate operations in Python?"
     - "What are functions and why should I use them?"
@@ -693,4 +693,3 @@ One keyword, default start:	1977 1993
 {: .challenge}
 
 {% include links.md %}
-

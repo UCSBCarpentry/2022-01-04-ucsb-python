@@ -1,7 +1,7 @@
 ---
 title: Short Introduction to Programming in Python
-teaching: 30
-exercises: 5
+teaching: 10
+exercises: 0
 questions:
     - "How do I program in Python?"
     - "How can I represent my data in Python?"
@@ -461,4 +461,3 @@ print(z)
 {: .output}
 
 {% include links.md %}
-
