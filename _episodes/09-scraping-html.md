@@ -101,7 +101,7 @@ frames[0].head()
 3	    NaN	  Group of 7 countries (G7) average (profile)	  80.32 million	    2009	   NaN	    NaN
 4	    4	    Brazil	                                       75.98 million	  2009	   NaN	    NaN
 ~~~
-{: .output}
+{: .language-python}
 
 ~~~
 frames[1]
@@ -150,7 +150,7 @@ Christmas Island	                            218	  464	           2001	    NaN	 
 
 249 rows × 5 columns
 ~~~
-{: .output}
+{: .language-python}
 
 Then, we discard the rows representing aggregates of countries (e.g. 'Group of 7 countries (G7) average (profile)').
 
@@ -179,7 +179,7 @@ Christmas Island	                            218	  464	           2001	    NaN	 
 
 218 rows × 5 columns
 ~~~
-{: .output}
+{: .language-python}
 
 Use of the `info()` function allows us to identify the type of data in our dataframe. Why might we want to do this?
 
@@ -356,7 +356,7 @@ Saint Helena	                                  =215	900	         2009	   NaN	   
 Tokelau	                                        217	  800	         2008	   NaN	   NaN
 Christmas Island	                              218	  464	         2001	   NaN	   NaN
 ~~~
-{: .output}
+{: .language-python}
 
 ~~~
 df.info()
@@ -403,7 +403,7 @@ Saint Helena	                                  =215	900.0        2009	   NaN	   
 Tokelau	                                        217	  800.0	       2008	   NaN	   NaN
 Christmas Island	                              218	  464.0	       2001	   NaN	   NaN
 ~~~
-{: .output}
+{: .language-python}
 
 ~~~
 df.info()
