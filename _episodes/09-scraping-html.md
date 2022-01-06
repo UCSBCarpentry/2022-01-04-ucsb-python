@@ -37,7 +37,7 @@ page = requests.get("https://www.nationmaster.com/country-info/stats/Media/Inter
 ~~~
 {: .language-python}
 
-'page' is an object that can be examined. Recall how we can check the type of the object.
+`page` is an object that can be examined. Recall how we can check the type of the object.
 
 ~~~
 type(page)
@@ -49,7 +49,7 @@ requests.models.Response
 ~~~
 {: .output}
 
-We are also able to check the status of 'page'. A status result of '200' indicates that it is good to continue.
+We are also able to check the status of `page`. A status result of `200` indicates that it is good to continue.
 
 ~~~
 page.status_code
@@ -61,7 +61,7 @@ page.status_code
 ~~~
 {: .output}
 
-We may study the content of 'page' before our initial creation of dataframes.
+We may study the content of `page` before our initial creation of dataframes.
 
 ~~~
 page.content[:1000]
@@ -69,7 +69,7 @@ page.content[:1000]
 {: .language-python}
 
 ~~~
-b'\n<!DOCTYPE HTML>\n<html>\n    <head>\n        <meta charset="utf-8">\n        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">\n    \n    \n<script type="text/javascript">;window._taboola=window._taboola||[];_taboola.push({category:\'auto\'});!function(e,f,u,i){if(!document.getElementById(i)){e.async=1;e.src=u;e.id=i;f.parentNode.insertBefore(e,f);}}(document.createElement(\'script\'),document.getElementsByTagName(\'script\')[0],\'//cdn.taboola.com/libtrc/nationmaster/loader.js\',\'tb_loader_script\');if(window.performance&&typeof window.performance.mark==\'function\'){window.performance.mark(\'tbl_ic\');}</script>\n\n        <title>Countries Compared by Media &gt; Internet users. International Statistics at NationMaster.com</title>\n        <meta name="description" content="" />\n        <meta name="author" content="">\n        <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">\n        \n        <meta property="og:type" content="website">\n        <meta property="'
+b`\n<!DOCTYPE HTML>\n<html>\n    <head>\n        <meta charset="utf-8">\n        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">\n    \n    \n<script type="text/javascript">;window._taboola=window._taboola||[];_taboola.push({category:\'auto\'});!function(e,f,u,i){if(!document.getElementById(i)){e.async=1;e.src=u;e.id=i;f.parentNode.insertBefore(e,f);}}(document.createElement(\'script\'),document.getElementsByTagName(\'script\')[0],\'//cdn.taboola.com/libtrc/nationmaster/loader.js\',\'tb_loader_script\');if(window.performance&&typeof window.performance.mark==\'function\'){window.performance.mark(\'tbl_ic\');}</script>\n\n        <title>Countries Compared by Media &gt; Internet users. International Statistics at NationMaster.com</title>\n        <meta name="description" content="" />\n        <meta name="author" content="">\n        <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">\n        \n        <meta property="og:type" content="website">\n        <meta property="'
 ~~~
 {: .output}
 
@@ -86,7 +86,7 @@ len(frames)
 ~~~
 {: .output}
 
-'frames' is a list of three dataframes, and we are able to see what those individual dataframes are with the use of subsetting tools.
+frames is a list of three dataframes, and we are able to see what those individual dataframes are with the use of subsetting tools.
 
 ~~~
 frames[0].head()
@@ -160,7 +160,7 @@ df
 ~~~
 {: .language-python}
 
-In the above code block, 'copy()' is not nesessary and only used to silence spurious warning. Notice that we went from a dataframe containing 249 rows to a dataframe containing 218 rows.
+In the above code block, copy() is not nesessary and only used to silence spurious warning. Notice that we went from a dataframe containing 249 rows to a dataframe containing 218 rows.
 
 ~~~
                                               #	    AMOUNT	       DATE	   GRAPH	HISTORY
@@ -181,7 +181,7 @@ Christmas Island	                            218	  464	           2001	    NaN	 
 ~~~
 {: .output}
 
-Use of the 'info()' function allows us to identify the type of data in our dataframe. Why might we want to do this?
+Use of the `info()` function allows us to identify the type of data in our dataframe. Why might we want to do this?
 
 ~~~
 df.info()
@@ -204,11 +204,11 @@ memory usage: 10.2+ KB
 ~~~
 {: .output}
 
-The 'AMOUNT' column is text ("object") because some column values contain the word "million". ALso note that Pandas made the entire column text, even those values that don't contain "million". Let's convert the values of 'AMOUNT' to numeric.
+The `AMOUNT` column is text ("object") because some column values contain the word "million". ALso note that Pandas made the entire column text, even those values that don't contain "million". Let's convert the values of `AMOUNT` to numeric.
 
 # Column Value Conversion
 
-Identify and select just those values needing conversion, and we'll incrementally build up a transformation. In this case, we want the strings under 'AMOUNT' to be numeric.
+Identify and select just those values needing conversion, and we'll incrementally build up a transformation. In this case, we want the strings under `AMOUNT` to be numeric.
 
 ~~~
 subset = df.loc[df.AMOUNT.str.contains("million"), "AMOUNT"]
@@ -233,14 +233,14 @@ Name: AMOUNT, Length: 97, dtype: object
 ~~~
 {: .output}
 
-By filtering using the '.contains()' function, we can see that 97 of the 218 rows need converting. We do this by first extracting the numeric portion of each individual value in the column. How do you think we might do this?
+By filtering using the `.contains()` function, we can see that 97 of the 218 rows need converting. We do this by first extracting the numeric portion of each individual value in the column. How do you think we might do this?
 
 ~~~
 subset.str.split(" ")
 ~~~
 {: .language-python}
 
-This code block splits up the values of 'AMOUNT' into a list that is comma-separated at the spaces.
+This code block splits up the values of `AMOUNT` into a list that is comma-separated at the spaces.
 
 ~~~
 COUNTRY
@@ -287,8 +287,9 @@ Now, we are almost done with converting this column to our needs. To finish the 
 
 > ## Review - Python Operations and Functions
 >
-> We want to convert the values of 'subset.str.split(" ").str.get(0)' to floats, and properly adjust them to the millions. How might we do that?
+> We want to convert the values of `subset.str.split(" ").str.get(0)` to floats, and properly adjust them to the millions. How might we do that?
 >
+>    > ## Answer
 >    > Recall that '.astype()' allows us to convert values.
 >    > After the values have been converted to numeric, we can multiply as needed.
 >    >
@@ -319,7 +320,7 @@ Now, we are almost done with converting this column to our needs. To finish the 
 >    {: .solution}
 {: .challenge}
 
-Since we have adjusted the values properly, we want to update the dataframe, 'df', with the new values.
+Since we have adjusted the values properly, we want to update the dataframe, `df`, with the new values.
 
 >
 > Note that the below line does not update the dataframe.
@@ -331,7 +332,7 @@ Since we have adjusted the values properly, we want to update the dataframe, 'df
 >
 {: .challenge}
 
-To update the dataframe, we use '.loc[]' to pull rows containing the "millions" string, and replace those with the new values we want to use for the dataframe. Are we done?
+To update the dataframe, we use `.loc[]` to pull rows containing the "millions" string, and replace those with the new values we want to use for the dataframe. Are we done?
 
 ~~~
 df.loc[df.AMOUNT.str.contains("million"), "AMOUNT"] = revised_subset
@@ -378,7 +379,7 @@ memory usage: 20.2+ KB
 ~~~
 {: .output}
 
-Almost. The values in the 'AMOUNT' column we did not replace still have type text due to the way Pandas originally constructed the column. It is simplest to just convert the entire column to float.
+Almost. The values in the `AMOUNT` column we did not replace still have type text due to the way Pandas originally constructed the column. It is simplest to just convert the entire column to float.
 
 ~~~
 df.AMOUNT = df.AMOUNT.astype(float)
@@ -522,39 +523,5 @@ frames = pd.read_html(str(tables[0]))
 {: .language-python}
 
 Now you may proceed as before.
-
-> ## Review - Python Operations and Functions
->
-> We want to convert the values of 'subset.str.split(" ").str.get(0)' to floats, and properly adjust them to the millions. How might we do that?
->
->    > Recall that '.astype()' allows us to convert values.
->    > After the values have been converted to numeric, we can multiply as needed.
->    >
->    > ~~~
->    > revised_subset = subset.str.split(" ").str.get(0).astype(float)*1e6
->    > revised_subset
->    > ~~~
->    > {: .language-python }
->    >
->    >
->    > ~~~
->    > COUNTRY
->    > China                    389000000.0
->    > United States            245000000.0
->    > Japan                     99180000.0
->    > Brazil                    75980000.0
->    > Germany                   65120000.0
->    >                             ...     
->    > Moldova                    1290000.0
->    > Paraguay                   1100000.0
->    > Bolivia                    1100000.0
->    > Kuwait                     1100000.0
->    > Republic of Macedonia      1060000.0
->    > Name: AMOUNT, Length: 97, dtype: float64
->    > ~~~
->    > {: .output}
->    >
->    {: .solution}
-{: .challenge}
 
 {% include links.md %}
